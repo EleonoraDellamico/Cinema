@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+    font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
+    color:white;
+}
+/* ---NAV BAR---*/
+
+.navbar{
+    position: sticky;
+    top:0;
+    display: flex;
+    padding: 0 4%;
+    min-height: 68px;
+    align-items: center;
+    font-size: small;
+    background-color: violet;
+}
+.navbar__logo{
+    display: flex;
+
+}
+
+/* > significa que solo los hijos directos van a tener estos estylos */
+.navbar__logo > img{
+height: 50px;
+}
+
+.navbar__browse > ul {
+    list-style: none;
+    color: white;
+}
+
+.navbar__browse > ul > li {
+    display: inline;
+    margin-left: 16px;
+}
+/* : firstchild es una pseudo clase que afecta el primer hijo de la madre */
+.navbar__browse > ul > li:first-child {
+    margin-left: 0;
+}
+
+.navbar__browse > ul > li > a {
+    text-decoration: none;
+    color: inherit;  /* inherit coge el color del contenedor padre */
+}
