@@ -8,6 +8,14 @@ body{
     font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
     color:white;
 }
+.icons8__icon{
+    width: 20px;
+    height: 20px;
+    filter: invert(1); /* Inverts the samples in the image*/
+}
+.not-inverted{
+    filter: invert(0);
+}
 /* ---NAV BAR---*/
 
 .navbar{
@@ -25,9 +33,16 @@ body{
 
 }
 
-/* > significa que solo los hijos directos van a tener estos estylos */
+/* > the style affect only the direct child */
 .navbar__logo > img{
 height: 50px;
+display: flex;
+align-items: center;
+}
+.navbar__browse{
+    display:flex;
+    flex: 1 0 auto; /* 1= agrandete lo que puedas 0= no te pongas nunca más pequeño auto=el decide el tamaño*/
+    margin-left: 32px;
 }
 
 .navbar__browse > ul {
@@ -39,12 +54,68 @@ height: 50px;
     display: inline;
     margin-left: 16px;
 }
-/* : firstchild es una pseudo clase que afecta el primer hijo de la madre */
+/* : firstchild selector is used to select the specified selector, only if it is the first child of its parent. */
 .navbar__browse > ul > li:first-child {
     margin-left: 0;
 }
-
+.navbar__browse > ul > li:not(.navbar__browse--state-selected) > a:hover{
+    color: black;
+}
 .navbar__browse > ul > li > a {
     text-decoration: none;
-    color: inherit;  /* inherit coge el color del contenedor padre */
+    color: inherit;  /* inherit: inherited styles from the parent element  in thi s case the color white*/
+    transition: all 200ms ease-in;
+}
+
+.navbar__browse--state-selected{
+    font-weight: bold;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__menu > img {
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.navbar__menu > img:last-child{
+    margin-right: 0;
+}
+/*NAVBAR MOBILE */
+.navbar__menu__mobile{
+    display: none;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+    .navbar__logo{
+        flex: 1 0 auto;
+    }
+    .navbar__browse{
+        display: none;
+    }
+    .navbar__menu{
+        display: none;
+    }
+    .navbar__menu__mobile{
+        display: block;
+        position: relative;
+    }
+    .navbar__menu__mobile__list{
+        display: none;
+        position: absolute;
+        padding:4px;
+        background-color: blue; 
+    }
+    .navbar__menu__mobile__list img {
+        padding: 8px 4px;
+    }
+    .navbar__menu__mobile:hover > .navbar__menu__mobile__list{
+        display: block;
+
+    }
+
 }
