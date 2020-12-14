@@ -9,8 +9,8 @@ body{
     color:white;
 }
 .icons8__icon{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: auto;
     filter: invert(1); /* Inverts the samples in the image*/
 }
 .not-inverted{
@@ -26,7 +26,8 @@ body{
     min-height: 68px;
     align-items: center;
     font-size: small;
-    background-color: violet;
+    background-color: black;
+    z-index: 150;
 }
 .navbar__logo{
     display: flex;
@@ -59,7 +60,7 @@ align-items: center;
     margin-left: 0;
 }
 .navbar__browse > ul > li:not(.navbar__browse--state-selected) > a:hover{
-    color: black;
+    color: red;
 }
 .navbar__browse > ul > li > a {
     text-decoration: none;
@@ -104,6 +105,10 @@ align-items: center;
         display: block;
         position: relative;
     }
+    .navbar__menu__mobile >img{
+        width:34px; 
+        height: auto;
+    }
     .navbar__menu__mobile__list{
         display: none;
         position: absolute;
@@ -119,3 +124,84 @@ align-items: center;
     }
 
 }
+
+/*HEADER*/
+.header{
+    position: relative;
+    margin-top: -68px;
+    height: 100vh;
+    width: 100%;
+}
+.header > video {
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+    opacity: 0.65;
+
+}
+.header__information{
+    position: absolute;
+    top:50%; 
+    transform: translate(0, -50%);
+    padding-left: 50px;
+}
+.header__information > * {
+    margin-top:32px; 
+}
+.header__information > * :first-child{
+    margin-top:0px; 
+}
+
+.header__information__type{
+    display:flex;
+    align-items: center;
+
+}
+.header__information__type > h2 {
+    margin-left: 12px;
+    text-transform: uppercase;
+    font-weight: bold; 
+    letter-spacing: 10px;
+} 
+.header__information__text > h1{
+    font-size:80px;
+    width: 40vw; 
+    line-height: 90px;
+    height: auto; 
+
+}
+.header__information__actions {
+    display:flex;
+
+}
+
+.header__information__actions > button{
+margin-left: 16px;
+height: 44px;
+display: flex;
+align-items: center;
+justify-content:center;
+border: 0px;
+border-radius:4px;
+padding:4px 36px; 
+font-size: 16px;
+font-weight:bold;
+cursor: pointer;
+outline: none;
+transition: opacity 0.4 ease-in;
+}
+.header__information__actions > button :first-child{
+    margin-left:0;
+}
+.header__information__actions > button:last-child {
+    background-color: rgba(109,109,110,0.7);
+    color: white;
+}
+.header__information__actions > button:hover{
+    opacity: 0.5;
+
+}
+.header__information__actions > button >img{
+    margin-right: 10px;
+}
+
