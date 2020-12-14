@@ -3,6 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+    
+}
 body{
     background-color: #141414;
     font-family:"Helvetica Neue",Helvetica, Arial, sans-serif;
@@ -203,5 +207,14 @@ transition: opacity 0.4 ease-in;
 }
 .header__information__actions > button >img{
     margin-right: 10px;
+}
+/*MAIN SECTION */
+.main{
+    position: relative;
+    margin-top: -20vh;
+    background:linear-gradient(to bottom, transparent 6vh, #141414);
+}
+.main__section__carusel {
+    display:flex;
 }
 
