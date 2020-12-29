@@ -1,133 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/style.css">
-    <title>Cinema</title>
-</head>
-<body>
-    <div class="navbar">
-        <div class="navbar__logo">
-            <img src="assets/img/logo.png" alt="">
-        </div>
-    <div class="navbar__browse"><ul>
-        <li class="navbar__browse--state-selected"><a href="#">Inicio</a></li>
-        <li><a href="#">Series</a></li>
-        <li><a href="#">Movies</a></li>
-        <li><a href="#">Cartoon</a></li>
-        <li><a href="#mylist">My list</a></li>
-        </ul></div>
-        <div class="navbar__menu">
-        <img class="icons8__icon"src="https://img.icons8.com/android/24/000000/search.png" alt="">
-        <img class="icons8__icon" src="https://img.icons8.com/fluent-systems-regular/24/000000/gift.png" alt="">
-        <img class="icons8__icon" src="https://img.icons8.com/material-sharp/24/000000/bell.png" alt="">
-        <img class="icons8__icon not-inverted" src="https://img.icons8.com/plasticine/100/000000/person-male.png" alt="">
-    </div>
-    <div class="navbar__menu__mobile">
-        <img class="icons8__icon not-inverted" src="https://img.icons8.com/plasticine/100/000000/person-male.png" alt="">
-        <div class="navbar__menu__mobile__list">
-        <img class="icons8__icon"src="https://img.icons8.com/android/24/000000/search.png" alt="">
-        <img class="icons8__icon" src="https://img.icons8.com/fluent-systems-regular/24/000000/gift.png" alt="">
-        <img class="icons8__icon" src="https://img.icons8.com/material-sharp/24/000000/bell.png" alt="">
-     </div>
-   </div>
- </div>
-<div class="header">
-    <video src="assets/video/vid.mp4" muted autoplay></video>
-    <div class="header__information">
-        <div class="header__information__type">
-        <img src="assets/img/c.png"alt="">
-        <h2>Series</h2>
-        </div>
-        <div class="header__information__text">
-            <h1 class="">Welcome to Chinoflix</h1>
-        </div>
-        <div class="header__information__actions">
-            <button><img src="https://img.icons8.com/fluent-systems-filled/24/000000/play.png" alt="play button" class="icons8__icon not-inverted">Reproduction</button>
-            <button><img src="https://img.icons8.com/android/24/000000/info.png" alt="play button" 
-                class="icons8__icon"> More Information</button>
-        </div>
-    </div>
-</div>
-<div class="main">
-    <div class="main__section" id="mylist">
-        <h1> My list</h1>
-        <div class="main__section__carusel">
-            <div class="main__section__carusel__card">
-                <img src="assets/img/sinner.jpg" alt="Movie">
-                <div class="carusel__card__text">
-                    <p> The sinner</p>
-                </div>
-            </div>
-            <div class="main__section__carusel__card">
-                <img src="assets/img/defenders.jpg" alt="Movie">
-                <div class="carusel__card__text">
-                    <p> Defenders</p>
-                </div>
-            </div>
-            <div class="main__section__carusel__card">
-                <img src="assets/img/frontera.jpg" alt="Movie">
-                <div class="carusel__card__text">
-                    <p> Frontera</p>
-                </div>
-            </div>
-            <div class="main__section__carusel__card">
-                <img src="assets/img/irlandes.jpg" alt="Movie">
-                <div class="carusel__card__text">
-                    <p> irlandes</p>
-                </div>
-            </div>
-            <div class="main__section__carusel__card">
-                <img src="assets/img/maldicion.jpg" alt="Movie">
-                <div class="carusel__card__text">
-                    <p> maldicion</p>
-                </div>
-            </div>
-            <div class="main__section__carusel__card">
-                <img src="assets/img/suits.jpg" alt="Movie">
-                <div class="carusel__card__text">
-                    <p> suits</p>
-                </div>
-            </div>
-            <div class="main__section__carusel__card">
-                <img src="assets/img/venom.jpg" alt="Movie">
-                <div class="carusel__card__text">
-                    <p> Venom</p>
-                </div>
-            </div> 
-                                  
-        </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="footer__socialmedia">
-        <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png" alt="Icon Facebook" class="icons8__icon">
-        <img src="https://img.icons8.com/ios-filled/50/000000/instagram.png" alt="Icon Instagram" class="icons8__icon">
-        <img src="https://img.icons8.com/android/24/000000/twitter.png" alt="Icon Twitter" class="icons8__icon">
-        <img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="Icon Youtube" class="icons8__icon">
-    </div>
-    <div class="footer__info">
-        <ul>
-            <li>Audio y subtitulos</li>
-            <li>Descripción de audio</li>
-            <li> Centro de ayuda</li>
-            <li> Trajeta regalo</li>
-            <li> Zonas de prensa</li>
-            <li>Inversores</li>
-            <li>Empleo</li>
-            <li>Términos de uso</li>
-            <li>Privacidad</li>
-            <li>Avisos legales</li>
-            <li>Preferencia de cookies</li>
-            <li>Información corporativa</li>
-            <li>Contactos</li>
-        </ul>
-    </div>
-    <div class="footer__copyright">
-        <p> 1997 -2020 chinoFlix,Inc.{Dato Sensibles}</p>
-    </div>
-</footer>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Style/style.css" />
+		<title>Cinema</title>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="navbar__logo">
+				<img src="assets/img/logo.png" alt="" />
+			</div>
+			<div class="navbar__browse">
+				<ul>
+					<li class="navbar__browse--state-selected"><a href="#">Inicio</a></li>
+					<li><a href="#">Series</a></li>
+					<li><a href="#">Movies</a></li>
+					<li><a href="#">Cartoon</a></li>
+					<li><a href="#mylist">My list</a></li>
+				</ul>
+			</div>
+			<div class="navbar__menu">
+				<div class="navbar__menu__search">
+					<div class="search__list__container" id="searchListContainer">
+						<ul id="searchList">
+							<li>Hola</li>
+							<li>Hola</li>
+						</ul>
+					</div>
+					<input type="text" id="searchInput" />
+					<img
+						class="icons8__icon"
+						src="https://img.icons8.com/android/24/000000/search.png"
+						alt=""
+						id="searchIcon"
+					/>
+				</div>
+				<img
+					class="icons8__icon"
+					src="https://img.icons8.com/fluent-systems-regular/24/000000/gift.png"
+					alt=""
+				/>
+				<img
+					class="icons8__icon"
+					src="https://img.icons8.com/material-sharp/24/000000/bell.png"
+					alt=""
+				/>
+				<img
+					class="icons8__icon not-inverted"
+					src="https://img.icons8.com/plasticine/100/000000/person-male.png"
+					alt=""
+				/>
+			</div>
+			<div class="navbar__menu__mobile">
+				<img
+					class="icons8__icon not-inverted"
+					src="https://img.icons8.com/plasticine/100/000000/person-male.png"
+					alt=""
+				/>
+				<div class="navbar__menu__mobile__list">
+					<img
+						class="icons8__icon"
+						src="https://img.icons8.com/android/24/000000/search.png"
+						alt=""
+					/>
+					<img
+						class="icons8__icon"
+						src="https://img.icons8.com/fluent-systems-regular/24/000000/gift.png"
+						alt=""
+					/>
+					<img
+						class="icons8__icon"
+						src="https://img.icons8.com/material-sharp/24/000000/bell.png"
+						alt=""
+					/>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<video src="assets/video/vid.mp4" muted autoplay></video>
+			<div class="header__information">
+				<div class="header__information__type">
+					<img src="assets/img/c.png" alt="" />
+					<h2>Series</h2>
+				</div>
+				<div class="header__information__text">
+					<h1 class="">Welcome to EliFlix</h1>
+				</div>
+				<div class="header__information__actions">
+					<button>
+						<img
+							src="https://img.icons8.com/fluent-systems-filled/24/000000/play.png"
+							alt="play button"
+							class="icons8__icon not-inverted"
+						/>Reproduction
+					</button>
+					<button>
+						<img
+							src="https://img.icons8.com/android/24/000000/info.png"
+							alt="play button"
+							class="icons8__icon"
+						/>
+						More Information
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="main__section" id="mylist">
+				<h1>My list</h1>
+				<div class="main__section__carusel">
+					<div class="main__section__carusel__card">
+						<img src="assets/img/sinner.jpg" alt="Movie" />
+						<div class="carusel__card__text">
+							<p>The sinner</p>
+						</div>
+					</div>
+					<div class="main__section__carusel__card">
+						<img src="assets/img/defenders.jpg" alt="Movie" />
+						<div class="carusel__card__text">
+							<p>Defenders</p>
+						</div>
+					</div>
+					<div class="main__section__carusel__card">
+						<img src="assets/img/frontera.jpg" alt="Movie" />
+						<div class="carusel__card__text">
+							<p>Frontera</p>
+						</div>
+					</div>
+					<div class="main__section__carusel__card">
+						<img src="assets/img/irlandes.jpg" alt="Movie" />
+						<div class="carusel__card__text">
+							<p>irlandes</p>
+						</div>
+					</div>
+					<div class="main__section__carusel__card">
+						<img src="assets/img/maldicion.jpg" alt="Movie" />
+						<div class="carusel__card__text">
+							<p>maldicion</p>
+						</div>
+					</div>
+					<div class="main__section__carusel__card">
+						<img src="assets/img/suits.jpg" alt="Movie" />
+						<div class="carusel__card__text">
+							<p>suits</p>
+						</div>
+					</div>
+					<div class="main__section__carusel__card">
+						<img src="assets/img/venom.jpg" alt="Movie" />
+						<div class="carusel__card__text">
+							<p>Venom</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__socialmedia">
+				<img
+					src="https://img.icons8.com/ios-glyphs/30/000000/facebook.png"
+					alt="Icon Facebook"
+					class="icons8__icon"
+				/>
+				<img
+					src="https://img.icons8.com/ios-filled/50/000000/instagram.png"
+					alt="Icon Instagram"
+					class="icons8__icon"
+				/>
+				<img
+					src="https://img.icons8.com/android/24/000000/twitter.png"
+					alt="Icon Twitter"
+					class="icons8__icon"
+				/>
+				<img
+					src="https://img.icons8.com/ios-filled/50/000000/youtube.png"
+					alt="Icon Youtube"
+					class="icons8__icon"
+				/>
+			</div>
+			<div class="footer__info">
+				<ul>
+					<li>Audio y subtitulos</li>
+					<li>Descripción de audio</li>
+					<li>Centro de ayuda</li>
+					<li>Trajeta regalo</li>
+					<li>Zonas de prensa</li>
+					<li>Inversores</li>
+					<li>Empleo</li>
+					<li>Términos de uso</li>
+					<li>Privacidad</li>
+					<li>Avisos legales</li>
+					<li>Preferencia de cookies</li>
+					<li>Información corporativa</li>
+					<li>Contactos</li>
+				</ul>
+			</div>
+			<div class="footer__copyright">
+				<p>1997 -2020 chinoFlix,Inc.{Dato Sensibles}</p>
+			</div>
+		</footer>
+	</body>
 </html>
