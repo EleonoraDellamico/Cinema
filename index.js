@@ -41,9 +41,10 @@ function searchList(event){
  const VALUE = event.target.value; //aqui recojo el valor del input
  //3 
  let searchList = document.getElementById ("searchList");
+ searchList.innerHTML="";
  for (let index = 0; index < ARRAYMOVIES.length; index++){
      const MOVIE = ARRAYMOVIES [index];
-     if (MOVIE.includes(VALUE)){
+     if (MOVIE.toLowerCase().includes(VALUE.toLowerCase()) && VALUE != ""){
          let htmlMovie = document.createElement("li"); // aqui creamos un li todavia no lo hemos asignado
          htmlMovie.innerHTML = MOVIE;
          searchList.appendChild(htmlMovie); // añadir el elemento que acabamod de crear o sea el li a un elemento que ya existe en nuestro html
